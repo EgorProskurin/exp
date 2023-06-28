@@ -9,13 +9,13 @@ expressions however a few expressions are provided out of the box.
 ## Installation
 
 ```
-$ go get github.com/alexkappa/exp/...
+$ go get github.com/EgorProskurin/exp/...
 ```
 
 ## Usage
 
 ```Go
-import "github.com/alexkappa/exp"
+import "github.com/EgorProskurin/exp"
 
 fmt.Printf("%t\n", exp.Or(exp.And(exp.True, exp.Or(exp.True, exp.False)), exp.Not(exp.False)).Eval(nil)) // true
 ```
@@ -23,7 +23,7 @@ fmt.Printf("%t\n", exp.Or(exp.And(exp.True, exp.Or(exp.True, exp.False)), exp.No
 It is also possible to use text to describe expressions. **Warning** this feature is not battle tested so use with caution.
 
 ```Go
-import "github.com/alexkappa/exp"
+import "github.com/EgorProskurin/exp"
 
 x, err := exp.Parse(`(foo >= 100.00)`)
 if err != nil {
