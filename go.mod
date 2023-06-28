@@ -1,3 +1,3 @@
-module github.com/alexkappa/exp
+module github.com/EgorProskurin/exp
 
-go 1.12
+go 1.19
